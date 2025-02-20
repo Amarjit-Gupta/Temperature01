@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1">
+            <p class="heading">Temperature:</p>
+            <p class="paragraph">Temperature tells you how hot or cold something is. It's like a measure of how much
+                heat is in the air or
+                in an object. When it's hot outside, the temperature is high, and when it's cold, the temperature is
+                low. Temperature is important because it affects how we feel and how things around us behave.</p>
+            <br><br>
+            <p class="heading">About The Project:</p>
+            <p class="paragraph">This is a temperature conversion tool built with HTML, CSS and JavaScript. It allows
+                users to input a
+                temperature in any of the following units (Celsius, Fahrenheit, Kelvin or Reaumur) and it automatically
+                converts the value to the other three units in real-time. The page features responsive design and
+                provides a user-friendly interface for easy temperature conversion. A reset button clears
+                all input fields.
+            </p>
+        </div>
+
+
+        <div class="container2">
+            <form>
+                <table>
+                    <tr>
+                        <td class="txt"><label>Celsius:</label></td>
+                        <td><input type="number" id="p1" oninput="myFunction1()" placeholder="Enter value..."></td>
+                    </tr>
+                    <tr>
+                        <td class="txt"><label>Fahrenheit:</label></td>
+                        <td><input type="number" id="p2" oninput="myFunction2()" placeholder="Enter value..."></td>
+                    </tr>
+                    <tr>
+                        <td class="txt"><label>Kelvin:</label></td>
+                        <td><input type="number" id="p3" oninput="myFunction3()" placeholder="Enter value..."></td>
+                    </tr>
+                    <tr>
+                        <td class="txt"><label>Reaumur:</label></td>
+                        <td><input type="number" id="p4" oninput="myFunction4()" placeholder="Enter value..."></td>
+                    </tr>
+                    <tr id="clear">
+                        <td colspan="2"><input type="reset" value="Clear"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
